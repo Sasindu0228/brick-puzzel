@@ -1,16 +1,31 @@
-# React + Vite
+# Brick Puzzle Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, visually engaging 2D block puzzle game built with **React** and **Vite**. The game challenges players to drag and drop distinct Tetromino-style shapes onto a 10x10 grid to form and automatically clear full rows and columns, earning score multipliers for consecutive clears.
 
-Currently, two official plugins are available:
+## Features
+- **Intuitive Drag & Drop**: Flawless, precise placement geometry allowing players to snap pieces onto the board confidently.
+- **19 Unique Shapes**: Varied block distributions ranging from simple 1x1 squares to complex 3x3 L-shapes.
+- **Responsive Design**: Designed Mobile-first to be fully playable anywhere from small smartphone touchscreens to ultra-wide desktop monitors without UI clipping.
+- **Dynamic Physics & Particles**: Highly polished visual feedback including grid validation highlighting, smooth shape drop shadows, and exploding block particle animations upon clearing lines.
+- **Audio Feedback**: Satisfying, cleanly synthesized audio cues mapping to placement locks and game over states.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## How to Play
 
-## React Compiler
+1. Drag blocks from your tray to the 10x10 board.
+2. Form completely solid horizontal or vertical lines to clear the blocks and score.
+3. You get 3 pieces at a time; when all 3 are played, the tray replenishes.
+4. If there's absolutely nowhere left to place any of the pieces remaining in your tray, it's **Game Over!**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React
+- Vanilla CSS (Glassmorphism & CSS Animations)
+- Web Audio API
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this project locally:
+
+```bash
+npm install
+npm run dev
+```
