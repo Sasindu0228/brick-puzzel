@@ -1,0 +1,60 @@
+:root {
+  --bg-color: #f7fafc;
+  --text-main: #2d3748;
+  --grid-bg: #e2e8f0;
+  --cell-bg: #cbd5e0;
+  --cell-border: rgba(255, 255, 255, 0.4);
+  --accent-color: #4299e1;
+  --game-over-overlay: rgba(255, 255, 255, 0.9);
+  
+  /* Block colors */
+  --color-1: #f56565; /* Red */
+  --color-2: #ed8936; /* Orange */
+  --color-3: #ecc94b; /* Yellow */
+  --color-4: #48bb78; /* Green */
+  --color-5: #38b2ac; /* Teal */
+  --color-6: #9f7aea; /* Purple */
+  --color-7: #ed64a6; /* Pink */
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  user-select: none; /* Prevent text selection during drag */
+  overflow: hidden; /* Prevent scrolling during drag on mobile */
+  background: radial-gradient(circle at center, #ffffff 0%, var(--bg-color) 100%);
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
